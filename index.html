@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automotora McQueen </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+        background-image: url("https://www.pixel4k.com/wp-content/uploads/2022/08/porsche-gt3-rs-4k_1660678430.jpg.webp"); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+        .navbar-custom {
+            background-color: #141b2e   !important; 
+            height:100px !important ;
+        }
+
+        .navbar-custom .navbar-brand {
+            color:#ffffff !important; 
+            font-family:Georgia, 'Times New Roman', Times, serif !important;
+        }
+
+        .navbar-custom .nav-link {
+            color:#ffffff !important; 
+            font-family: Georgia, 'Times New Roman', Times, serif !important;
+            
+        }
+
+        .hidden {
+            display: none;
+        }
+        .footer-custom {
+        background-color: #141b2e ;
+        color:#ffffff ; 
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+        font-size: 20px; 
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-custom"  >
+        <a class="navbar-brand" href="#">
+            <img src="IMG/logo.jpg" width="140" height="120" alt="Logo">
+            Automotora McQueen
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showLogin()">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showGallery()">Galería</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMG/baner1.0jpeg.jpg" class="d-block w-100" height="320"  alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/baner2.0.jpg" class="d-block w-100" height="320" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/baner3.0.jpg" class="d-block w-100" height="320" alt="Imagen 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+<!-- IFRAMAE -->
+    <div class="container mt-4"> 
+        <iframe id="loginFrame" src="login.html"  style="width: 100%;   min-height: 590px;"></iframe>
+        <iframe id="galleryFrame" src="galeria.html"style="width: 90%; min-height: 600px;" class="hidden"></iframe>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer-custom text-center py-3"">
+        Sitio Desarrollado por: Bryan Javier Cornejo Arrué
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Carrusel-->
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+
+        function showLogin() {
+            document.getElementById("loginFrame").style.display = "block";
+            document.getElementById("galleryFrame").style.display = "none";
+        }
+
+        function showGallery() {
+            document.getElementById("loginFrame").style.display = "none";
+            document.getElementById("galleryFrame").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

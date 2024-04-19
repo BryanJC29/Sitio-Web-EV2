@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Productos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+        background-image: url("https://www.supercars.net/blog/wp-content/uploads/2020/12/2021-Porsche-911-GT3-Cup-003-2160-scaled.jpg"); 
+        background-repeat: no-repeat;
+        background-size: cover; 
+        font-family: 'Times New Roman', Times, serif; /* Fuente */
+        }
+        /* Estilos */
+        .product-card {
+            border: 1px solid #0a0a0a;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #ffff;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 100px;
+            max-width: 300px;
+        }
+        .quantity {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .quantity-label {
+            display: inline-block;
+            width: 50px;
+            text-align: left;
+        }
+
+        .quantity-value {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+            border: 1px solid #0f0f0f;
+            border-radius: 5px;
+            margin-left: 30px;
+        }
+
+        .price {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3> Lamborghini/Veneno </h3>
+                <p class="price">$200.000.000</p>
+                <img src="IMG/producto1.jpg" alt="Producto 1" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">2</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Nissan GTR</h3>
+                <p class="price">$90.0000</p>
+                <img src="IMG/producto2.jpg" alt="Producto 2" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">8</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Jac T8 PRO</h3>
+                <p class="price">$20.0000</p>
+                <img src="IMG/producto3.jpg" alt="Producto 3" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Nissan 400Z</h3>
+                <p class="price">$40.000.000</p>
+                <img src="IMG/producto 4.jpg" alt="Producto 1" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">7</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Subaru WRX</h3>
+                <p class="price">$32.000.000</p>
+                <img src="IMG/producto5.jpg" alt="Producto 2" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">12</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Hyundai Elantra</h3>
+                <p class="price">$24.000.000</p>
+                <img src="IMG/producto6.jpg" alt="Producto 3" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">32</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Honda Civic</h3>
+                <p class="price">$27.000.000</p>
+                <img src="IMG/producto 7.jpg" alt="Producto 1" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">10</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>Volkswagen GTI</h3>
+                <p class="price">$39.000.000</p>
+                <img src="IMG/prducto8.jpg" alt="Producto 2" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">4</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <h3>BMW M4</h3>
+                <p class="price">$82.000.000</p>
+                <img src="IMG/producto9.jpg" alt="Producto 3" class="product-image">
+                <div class="quantity">
+                    <span class="quantity-label">Cantidad:</span>
+                    <span class="quantity-value">15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
